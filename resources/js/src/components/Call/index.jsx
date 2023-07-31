@@ -1,0 +1,53 @@
+import PhoneFlip from "../../assets/icons/PhoneFlip";
+import { Locales, Constants } from "../../common";
+import { useState } from "react";
+import Cancel from "../../assets/icons/Cancel";
+
+import "./css.css";
+import { useAppContext } from "../../Context";
+
+export default function Call() {
+    const [isActive, setActive] = useState(false);
+    const { state } = useAppContext();
+    return (
+        <>
+            <div
+                className="call-wrapper"
+                onClick={function () {
+                    setActive(true);
+                }}
+            >
+                <PhoneFlip />
+            </div>
+            {isActive && (
+                <div
+                    className="placeholder"
+                    onClick={function () {
+                        setActive(false);
+                    }}
+                />
+            )}
+            <div
+                className={"call-content" + " " + (isActive ? "active" : "")}
+                style={{ backgroundColor: state.mode == 'dark' ? '#1C1C1C' :  '#fff' }}
+            >
+                <div
+                    className="cancel"
+                    onClick={function () {
+                        setActive(false);
+                    }}
+                >
+                    <Cancel />
+                </div>
+                <h3>{Locales.en.Call}</h3>
+                {Constants.storePhones.map(function (phone) {
+                    return (
+                        <a key={phone} href={"tel:" + phone}>
+                            {phone}
+                        </a>
+                    );
+                })}
+            </div>
+        </>
+    );
+}
