@@ -1,7 +1,7 @@
 export default {
   Powered: "Powered by Pikir.",
   appLocales: ["en", "tm", "ru", "tr"],
-  storePhones: ["+99365726162", "+99312754844", "+99312754944"],
+  storePhones: ["275371",],
   phone: "+99364552554",
   currency: "TMT",
 

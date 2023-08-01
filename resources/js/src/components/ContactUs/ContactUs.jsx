@@ -101,7 +101,7 @@ function ContactUs() {
                                     userSelect :' none'
                                 }}
                             >
-                                {Constants.address}
+                            {Locales[state.lang].Address_1}
                             </h2>
                         </div>
                     </div>

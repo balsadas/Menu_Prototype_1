@@ -14,6 +14,7 @@ export default {
         Phone: "Phone",
         Instagram: "Instagram",
         Contact: "Contact Us",
+        Address_1 :'Gorogly 15'
     },
 
     ru: {
@@ -31,6 +32,7 @@ export default {
         Address: "Aдрес",
         Instagram: "Инстаграм",
         Contact: "Связаться с нами",
+        Address_1 : 'Гёроглы 15'
     },
 
     tr: {
@@ -47,7 +49,8 @@ export default {
         Phone: "Telefon",
         Address: "Adres",
         Instagram: "Instagram",
-        Contact : 'Bize Ulaşın'
+        Contact : 'Bize Ulaşın',
+        Address_1: 'Gorogly 15'
     },
 
     tm: {
@@ -64,6 +67,7 @@ export default {
         Phone: "Telefon",
         Address: "Salgy",
         Instagram: "Instagram",
-        Contact : 'Biz bilen Habarlaşyň'
+        Contact : 'Biz bilen Habarlaşyň',
+        Address_1 :'Görogly 15'
     },
 };
